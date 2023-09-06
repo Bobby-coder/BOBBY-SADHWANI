@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
 
 const ToggleNavModal = ({ toggleNav, setToggleNav }) => {
   return (
@@ -34,27 +34,27 @@ const ToggleNavModal = ({ toggleNav, setToggleNav }) => {
           </div>
           <nav className="mt-6">
             <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-              <NavLink
+              <Link
                 className="block py-2"
-                to="/"
+                href="/"
                 onClick={() => setToggleNav(false)}
               >
                 <li>Home</li>
-              </NavLink>
-              <NavLink
+              </Link>
+              <Link
                 className="block py-2"
-                to="/projects"
+                href="/portfolio"
                 onClick={() => setToggleNav(false)}
               >
                 <li>Portfolio</li>
-              </NavLink>
-              <NavLink
+              </Link>
+              <Link
                 className="block py-2"
-                to="/blog"
+                href="/blog"
                 onClick={() => setToggleNav(false)}
               >
                 <li>Blog</li>
-              </NavLink>
+              </Link>
             </ul>
           </nav>
         </div>

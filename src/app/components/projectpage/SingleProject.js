@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const SingleProject = ({title, liveLink, githubLink, imgSrc, description}) => {
   return (
     <>
@@ -16,7 +18,7 @@ const SingleProject = ({title, liveLink, githubLink, imgSrc, description}) => {
           {description}
         </p>
 
-        <a
+        <Link
           href={liveLink}
           target = '_blank'
           className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200"
@@ -28,9 +30,9 @@ const SingleProject = ({title, liveLink, githubLink, imgSrc, description}) => {
             ></path>
           </svg>
           <span className="ml-2">Live Site</span>
-        </a>
+        </Link>
 
-        <a
+        <Link
           href={githubLink}
           target = '_blank'
           className="relative z-10 mt-3 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200"
@@ -42,7 +44,7 @@ const SingleProject = ({title, liveLink, githubLink, imgSrc, description}) => {
             ></path>
           </svg>
           <span className="ml-2">Source Code</span>
-        </a>
+        </Link>
       </div>
     </>
   );

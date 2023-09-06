@@ -13,6 +13,7 @@ const ProjectList = () => {
               githubLink={currEle.githubLink}
               imgSrc={currEle.imgSrc}
               description={currEle.description}
+              key={crypto.randomUUID()}
             />
           ))}
         </div>
