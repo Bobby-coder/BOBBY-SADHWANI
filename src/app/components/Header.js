@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import ToggleNavModal from "./ToggleNavModal";
 import { BiSun, BiMoon } from "react-icons/bi";
+import Image from "next/image";
 
 const Header = () => {
   const [toggleNav, setToggleNav] = useState(false);
@@ -25,9 +26,12 @@ const Header = () => {
       <div className="flex justify-between mx-auto pt-6 px-4 sm:px-16 md:px-0 md:max-w-2xl lg:px-28 lg:max-w-7xl xl:px-32">
         <div className="h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10">
           <Link href="/">
-            <img
+            <Image
+              alt="user-profile-image"
               src="/images/dp.png"
               className="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-9 w-9"
+              width={36}
+              height={36}
             />
           </Link>
         </div>
