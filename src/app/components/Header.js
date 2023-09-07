@@ -96,7 +96,7 @@ const Header = () => {
                 : "hidden"
             }
           >
-            <BiSun className="h-6 w-6" />
+            <BiMoon className="h-6 w-6" />
           </button>
 
           <button
@@ -107,7 +107,7 @@ const Header = () => {
                 : "hidden"
             }
           >
-            <BiMoon className="w-6 h-6" />
+            <BiSun className="w-6 h-6" />
           </button>
         </div>
       </div>

@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={saira.className}>
+      <body className={`${saira.className} dark:bg-[#18181B]`}>
         <Header />
         {children}
         <Footer />
