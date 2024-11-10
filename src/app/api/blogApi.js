@@ -1,5 +1,14 @@
 const blogApi = [
   {
+    title: "Stack in Javascript",
+    liveLink:
+      "https://bobby-sadhwani.hashnode.dev/stack-in-javascript",
+    dateString: "August 30, 2023",
+    description:
+      "The aim of this article is to simplify what is Stack data structure and how to implement it in Javascript",
+  },
+
+  {
     title: "Prototypal Inheritance in JavaScript",
     liveLink:
       "https://bobby-sadhwani.hashnode.dev/prototypal-inheritance-in-javascript",
